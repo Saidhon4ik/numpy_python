@@ -9,27 +9,31 @@
 
 
 
-
-#######Multidimensional arrays
+#============================#Multidimensional arrays#===================================#
 import numpy as np
+
+
 
 #zero dimensional array
 arr = np.array([[['A','B','C'], ['D','E','F'], ['G','H','I']],
                [['J','K','L'], ['M','N','O'], ['P','Q','Q']],
                [['S','T','U'], ['V','W','X'], ['Y','Z','_']]])
 
-# #number of dimensions
-# print(arr.ndim)
-# print(arr.shape) # outout is a tuple which consists of (depth, num of rows, num of columns)
 
 
-# #it is chain indexing
-# print(arr[0][0][1])
+#number of dimensions
+print(arr.ndim)
+print(arr.shape) # outout is a tuple which consists of (depth, num of rows, num of columns)
 
 
 
-# #It is Multidimensional indexing. It is faster than chain indexing btw
-# print(arr[0,0,0])
+#it is chain indexing
+print(arr[0][0][1])
+
+
+
+#It is Multidimensional indexing. It is faster than chain indexing btw
+print(arr[0,0,0])
 
 
 
